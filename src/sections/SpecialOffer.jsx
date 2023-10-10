@@ -4,7 +4,16 @@ import { Button } from "../components";
 
 const SpecialOffer = () => {
   return (
-    <section className="max-container flex flex-col justify-center items-center">
+    <section className="max-container flex max-md:flex-col-reverse justify-center items-center">
+      <div>
+        <img
+          src={offer}
+          alt="Shoe Promotion"
+          width={773}
+          height={687}
+          className="object-contain w-full"
+        />
+      </div>
       <div className="w-full mb-10">
         <h3 className="text-4xl font-palanquin font-bold">
           <span className="text-coral-red">Special </span> Offer
@@ -28,15 +37,6 @@ const SpecialOffer = () => {
             textColor="text-slate-gray"
           />
         </div>
-      </div>
-      <div>
-        <img
-          src={offer}
-          alt="Shoe Promotion"
-          width={773}
-          height={687}
-          className="object-contain w-full"
-        />
       </div>
     </section>
   );

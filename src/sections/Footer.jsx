@@ -1,6 +1,6 @@
 import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
-import { footerLinks, products, socialMedia } from "../constants";
+import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
         </p>
         <ul className="flex items-center gap-5 mt-8">
           {socialMedia.map((social) => (
-            <li className="bg-white p-2 rounded-full">
+            <li key={social.src} className="bg-white p-2 rounded-full">
               <a>
                 <img src={social.src} />
               </a>
@@ -33,13 +33,16 @@ const Footer = () => {
       </div>
       <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap sm:max-w-xl">
         {footerLinks.map((footerLink) => (
-          <div>
+          <div key={footerLink.title}>
             <h3 className="font-montserrat text-xl leading-normal font-medium mb-6 text-white">
               {footerLink.title}
             </h3>
             <ul className="mt-10">
               {footerLink.links.map((link) => (
-                <li className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray">
+                <li
+                  key={footerLink.name}
+                  className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
+                >
                   {link.name}
                 </li>
               ))}

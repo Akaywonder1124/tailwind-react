@@ -1,6 +1,7 @@
 # Tailwind CSS + React JS
-![Nike Landing Page](https://tailwind-react-delta.vercel.app/))
+![Nike Landing Page](https://abdulakeemasiru.com.ng/assets/images/Frame%203Nike.png))
 
+live: https://tailwind-react-delta.vercel.app/ 
 
 In this course, I:
 - Learn how to make the most out of Tailwind CSS

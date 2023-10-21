@@ -3,7 +3,7 @@
 
 live: https://tailwind-react-delta.vercel.app/ 
 
-In this course, I:
+In this project, I:
 - Learn how to make the most out of Tailwind CSS
 - Fully understand how Tailwind works behind-the-scenes
 - Follow all of Tailwind's best practices
